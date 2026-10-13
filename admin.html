@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin dashboard | CampusDesk</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">CampusDesk</a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="admin.html" aria-current="page">Admin</a>
+      <a href="user.html">Student</a>
+    </nav>
+  </header>
+  <main class="container">
+    <div class="page-heading">
+      <p class="eyebrow">ADMIN PORTAL</p>
+      <h1>College dashboard</h1>
+      <p>At-a-glance information for the current sample term.</p>
+    </div>
+    <section class="stats-grid" aria-label="College summary">
+      <article class="card stat"><span>Students</span><strong>3</strong></article>
+      <article class="card stat"><span>Average attendance</span><strong>91%</strong></article>
+      <article class="card stat"><span>Active notices</span><strong>2</strong></article>
+    </section>
+    <section class="card section-card">
+      <div class="section-heading">
+        <div><p class="eyebrow">RECORDS</p><h2>Student roster</h2></div>
+      </div>
+      <label class="search-label" for="student-search">Search students</label>
+      <input id="student-search" class="student-search" type="search" placeholder="Search by name, roll number, or course" data-student-search>
+      <p class="search-status" data-search-status aria-live="polite">Showing all 3 students</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Student</th><th>Roll number</th><th>Course</th><th>Attendance</th></tr></thead>
+          <tbody>
+            <tr><td>Aarav Patel</td><td>CS-1024</td><td>Computer Science</td><td>94%</td></tr>
+            <tr><td>Meera Shah</td><td>CS-1031</td><td>Computer Science</td><td>89%</td></tr>
+            <tr><td>Rohan Kumar</td><td>IT-1018</td><td>Information Technology</td><td>90%</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="card section-card">
+      <p class="eyebrow">CAMPUS</p>
+      <h2>Notices</h2>
+      <ul class="notice-list">
+        <li><strong>Library hours:</strong> The reading room is open until 8:00 PM this week.</li>
+        <li><strong>Project reviews:</strong> Semester project reviews begin on October 20.</li>
+      </ul>
+    </section>
+  </main>
+  <footer class="site-footer">Sample data only · CampusDesk College Management</footer>
+  <script src="script.js"></script>
+</body>
+</html>
